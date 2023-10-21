@@ -1,4 +1,8 @@
 import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
+import Header from "./components/Header";
+import Banner from "./components/Banner";
+import CarList from "./components/CarList";
+import Footer from "./components/Footer";
 
 export default function Home() {
   const loader = new GLTFLoader();
@@ -28,6 +32,11 @@ export default function Home() {
   );
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24"></main>
+    <main>
+      <Banner />
+      <Header />
+      <CarList />
+      <Footer />
+    </main>
   );
 }
