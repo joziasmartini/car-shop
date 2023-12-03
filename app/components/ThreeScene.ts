@@ -27,10 +27,12 @@ export const initThreeScene = (
 
     const loader = new GLTFLoader();
 
+    let model: any;
+
     loader.load(
       "3d/free_1972_datsun_240k_gt/scene.gltf",
       (gltf) => {
-        const model = gltf.scene;
+        model = gltf.scene;
         model.scale.set(0.3, 0.3, 0.2);
         model.rotation.y = 0.2;
         scene.add(model);
@@ -45,6 +47,12 @@ export const initThreeScene = (
 
     const animate = () => {
       requestAnimationFrame(animate);
+
+      // Rotate the model
+      if (model) {
+        model.rotation.y += 0.01; // Adjust the rotation speed
+      }
+
       renderer.render(scene, camera);
     };
 
