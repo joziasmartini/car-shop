@@ -8,17 +8,17 @@ export const initThreeScene = (
   if (sceneRef.current) {
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(
-      75,
+      70,
       window.innerWidth / window.innerHeight,
       0.1,
       1000
     );
-    camera.position.set(0, 0, 5);
+    camera.position.set(-5, -2.5, 4);
     const renderer = new THREE.WebGLRenderer({ alpha: true });
     renderer.setSize(window.innerWidth, window.innerHeight);
 
     // Add a directional light
-    const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
+    const directionalLight = new THREE.DirectionalLight(0xffffff, 30);
     directionalLight.position.set(0, 0, 5); // Adjust the light position
     scene.add(directionalLight);
 
@@ -31,7 +31,8 @@ export const initThreeScene = (
       "3d/free_1972_datsun_240k_gt/scene.gltf",
       (gltf) => {
         const model = gltf.scene;
-        model.scale.set(0.2, 0.2, 0.2);
+        model.scale.set(0.3, 0.3, 0.2);
+        model.rotation.y = 0.2;
         scene.add(model);
       },
       undefined,

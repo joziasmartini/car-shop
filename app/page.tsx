@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <main>
       {/* Include absolute in className below */}
-      <div ref={sceneRef} className="z-20" />
+      <div ref={sceneRef} className="z-20 absolute" />
       <Banner />
       <Header />
       <CarList />
