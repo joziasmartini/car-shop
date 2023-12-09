@@ -18,8 +18,12 @@ export const initThreeScene = (
 
     // Add a directional light
     const directionalLight = new THREE.DirectionalLight(0xffffff, 30);
-    directionalLight.position.set(0, 0, 5); // Adjust the light position
+    directionalLight.position.set(10, 50, 5); // Adjust the light position
     scene.add(directionalLight);
+
+    // Add a directional light
+    const ambientLight = new THREE.AmbientLight(0xffffff, 30);
+    scene.add(ambientLight);
 
     // Background color to transparent
     renderer.setClearColor(0x000000, 0);
