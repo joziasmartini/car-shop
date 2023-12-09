@@ -5,19 +5,26 @@ import Banner from "./components/Banner";
 import CarList from "./components/CarList";
 import Footer from "./components/Footer";
 import { useEffect, useRef } from "react";
-import { initThreeScene } from "./components/ThreeScene";
+import { initThreeScene } from "./components/ThreeSceneHeader";
+import { initThreeSceneTwo } from "./components/ThreeSceneTwo";
 
 export default function Home() {
-  const sceneRef = useRef<HTMLDivElement | null>(null);
+  const headerSceneRef = useRef<HTMLDivElement | null>(null);
+  const firstCarSceneRef = useRef<HTMLDivElement | null>(null);
+  const secondCarSceneRef = useRef<HTMLDivElement | null>(null);
+  const thirdCarSceneRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
-    initThreeScene(sceneRef);
+    initThreeScene(headerSceneRef);
+    initThreeSceneTwo(firstCarSceneRef);
+    initThreeSceneTwo(secondCarSceneRef);
+    initThreeSceneTwo(thirdCarSceneRef);
   }, []);
 
   return (
     <main>
       {/* Include absolute in className below */}
-      <div ref={sceneRef} className="z-20 absolute" />
+      <div ref={headerSceneRef} className="z-20 absolute" />
       <Banner />
       <Header />
       <CarList />
