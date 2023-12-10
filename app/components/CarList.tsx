@@ -113,7 +113,7 @@ export default function CarList() {
         ))}
       </ul>
       <div className="flex justify-center">
-        <span className="mb-12 px-20 py-4 cursor-pointer hover:bg-red-700 bg-red-600 font-bold text-white rounded-full">
+        <span className="mb-12 px-20 py-4 cursor-pointer bg-white hover:bg-neutral-300 font-bold text-red-600 rounded-full">
           Ver mais carros...
         </span>
       </div>

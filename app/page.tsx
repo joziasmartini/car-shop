@@ -23,7 +23,6 @@ export default function Home() {
 
   return (
     <main>
-      {/* Include absolute in className below */}
       <div ref={headerSceneRef} className="z-20 absolute" />
       <Banner />
       <Header />
