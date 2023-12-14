@@ -16,8 +16,8 @@ export default function Home() {
 
   return (
     <main>
-      <div ref={headerSceneRef} className="z-20 absolute" />
-      <Banner />
+      <div ref={headerSceneRef} className="z-20 absolute mt-12" />
+      {/* <Banner /> */}
       <Header />
       <CarList />
       <Footer />

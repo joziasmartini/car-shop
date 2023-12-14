@@ -33,7 +33,7 @@ export const initThreeSceneSecond = (
     let model: any;
 
     loader.load(
-      "3d/65_chevy_malibu/scene.gltf",
+      "3d/chrysler_-_new_yorker_1971/scene.gltf",
       (gltf) => {
         model = gltf.scene;
         model.scale.set(0.3, 0.3, 0.2);

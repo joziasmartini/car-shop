@@ -6,13 +6,8 @@ export const initThreeSceneFirst = (
 ) => {
   if (sceneRef.current) {
     const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera(
-      70,
-      window.innerWidth / window.innerHeight,
-      0.1,
-      1000
-    );
-    camera.position.set(-5, -2.5, 4);
+    const camera = new THREE.PerspectiveCamera(100, 3, 0.1, 2000);
+    camera.position.set(0, 2, 3);
     const renderer = new THREE.WebGLRenderer({ alpha: true });
     renderer.setSize(window.innerWidth, window.innerHeight);
 
@@ -36,9 +31,8 @@ export const initThreeSceneFirst = (
       "3d/65_chevy_malibu/scene.gltf",
       (gltf) => {
         model = gltf.scene;
-        model.scale.set(0.3, 0.3, 0.2);
+        model.scale.set(0.3, 0.3, 0.3);
         model.rotation.y = 3;
-        model.setSize = 1.5;
         scene.add(model);
       },
       undefined,

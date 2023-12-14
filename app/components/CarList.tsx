@@ -57,7 +57,7 @@ export default function CarList() {
         {cars.map((car) => (
           <li
             key={car.name + Math.random()}
-            className="col-span-1 flex flex-col bg-white text-center rounded-md relative"
+            className="col-span-1 flex flex-col bg-white text-center rounded-md relative max-h-sm"
           >
             <div className="flex flex-1 flex-col p-8">
               <div ref={car.ref} className="z-20" />
