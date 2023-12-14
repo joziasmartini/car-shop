@@ -1,0 +1,11 @@
+Model Information:
+* title:	Chrysler - New Yorker 1971
+* source:	https://sketchfab.com/3d-models/chrysler-new-yorker-1971-3a19f19092614c8cb36d1420288abe21
+* author:	lokeig (https://sketchfab.com/lokeig)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Chrysler - New Yorker 1971" (https://sketchfab.com/3d-models/chrysler-new-yorker-1971-3a19f19092614c8cb36d1420288abe21) by lokeig (https://sketchfab.com/lokeig) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)

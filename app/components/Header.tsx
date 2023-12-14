@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <div className="bg-white">
       <div className="relative isolate overflow-hidden bg-gradient-to-b from-red-100/20">
-        <div className="mx-auto max-w-7xl pb-24 pt-10 sm:pb-32 lg:grid lg:grid-cols-2 lg:gap-x-8 lg:px-8 lg:py-40">
+        <div className="mx-auto max-w-7xl pb-24 pt-10 sm:pb-32 lg:grid lg:grid-cols-2 lg:gap-x-8 lg:px-8 lg:pt-20 lg:pb-28">
           <div className="px-6 lg:px-0 lg:pt-4">
             <div className="mx-auto max-w-2xl">
               <div className="max-w-lg">
@@ -28,11 +28,11 @@ export default function Header() {
                   </a>
                 </div>
                 <h1 className="mt-10 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                  Elegância em quatro rodas
+                  Clássicos em quatro rodas
                 </h1>
                 <p className="mt-6 text-lg leading-8 text-gray-600">
-                  Conheça a nossa coleção exclusiva de carros de luxo, onde a
-                  sofisticação encontra a performance.
+                  Conheça a nossa coleção exclusiva de carros clássicos, onde a
+                  história encontra a sofisticação.
                 </p>
                 <div className="mt-10 flex items-center gap-x-6">
                   <a
