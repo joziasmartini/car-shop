@@ -12,12 +12,6 @@ export default function CarList() {
   const secondCarSceneRef = useRef<HTMLDivElement | null>(null);
   const thirdCarSceneRef = useRef<HTMLDivElement | null>(null);
 
-  useEffect(() => {
-    initThreeSceneFirst(firstCarSceneRef);
-    initThreeSceneSecond(secondCarSceneRef);
-    initThreeSceneThird(thirdCarSceneRef);
-  }, []);
-
   const cars = [
     {
       name: "Challenger Hellcat",
@@ -48,19 +42,32 @@ export default function CarList() {
     },
   ];
 
+  useEffect(() => {
+    initThreeSceneFirst(firstCarSceneRef);
+    initThreeSceneSecond(secondCarSceneRef);
+    initThreeSceneThird(thirdCarSceneRef);
+  }, []);
+
   return (
     <>
       <ul
         role="list"
         className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 m-14"
       >
-        {cars.map((car) => (
+        {cars.map((car, index) => (
           <li
             key={car.name + Math.random()}
-            className="col-span-1 flex flex-col bg-white text-center rounded-md relative max-h-sm"
+            className="col-span-1 mt-8 flex flex-col bg-white text-center rounded-md relative max-h-sm"
           >
             <div className="flex flex-1 flex-col p-8">
-              <div ref={car.ref} className="z-20 border border-red-500" />
+              <div className="p-20">
+                <div
+                  ref={car.ref}
+                  className={`z-20 absolute -left-[485px] -top-[210px] ${
+                    index === 1 ? "-top-[328px]" : ""
+                  }`}
+                />
+              </div>
               {/* <Image
                 className="mx-auto h-32 w-32 flex-shrink-0 rounded-full"
                 src={car.imageUrl}

@@ -6,13 +6,8 @@ export const initThreeSceneThird = (
 ) => {
   if (sceneRef.current) {
     const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera(
-      70,
-      window.innerWidth / window.innerHeight,
-      0.1,
-      1000
-    );
-    camera.position.set(-5, -2.5, 4);
+    const camera = new THREE.PerspectiveCamera(100, 2, 0.1, 2000);
+    camera.position.set(0, 0.4, 3);
     const renderer = new THREE.WebGLRenderer({ alpha: true });
     renderer.setSize(window.innerWidth, window.innerHeight);
 
@@ -33,11 +28,11 @@ export const initThreeSceneThird = (
     let model: any;
 
     loader.load(
-      "3d/65_chevy_malibu/scene.gltf",
+      "3d/xyz_school_coursework_highpoly_porsche_singer/scene.gltf",
       (gltf) => {
         model = gltf.scene;
         model.scale.set(0.3, 0.3, 0.2);
-        model.rotation.y = 3;
+        model.rotation.y = 50;
         model.setSize = 1.5;
         scene.add(model);
       },
