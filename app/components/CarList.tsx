@@ -23,7 +23,7 @@ export default function CarList() {
       ref: firstCarSceneRef,
     },
     {
-      name: "New Yorker Hellcat",
+      name: "New Yorker",
       title: "Classic Car",
       brand: "Chrysler",
       email: "dodge@email.com",
