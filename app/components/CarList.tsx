@@ -60,7 +60,7 @@ export default function CarList() {
             className="col-span-1 flex flex-col bg-white text-center rounded-md relative max-h-sm"
           >
             <div className="flex flex-1 flex-col p-8">
-              <div ref={car.ref} className="z-20" />
+              <div ref={car.ref} className="z-20 border border-red-500" />
               {/* <Image
                 className="mx-auto h-32 w-32 flex-shrink-0 rounded-full"
                 src={car.imageUrl}

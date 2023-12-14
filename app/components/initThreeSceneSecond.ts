@@ -6,13 +6,8 @@ export const initThreeSceneSecond = (
 ) => {
   if (sceneRef.current) {
     const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera(
-      70,
-      window.innerWidth / window.innerHeight,
-      0.1,
-      1000
-    );
-    camera.position.set(-5, -2.5, 4);
+    const camera = new THREE.PerspectiveCamera(30, 2, 0.1, 2000);
+    camera.position.set(0, 0.4, 3);
     const renderer = new THREE.WebGLRenderer({ alpha: true });
     renderer.setSize(window.innerWidth, window.innerHeight);
 
