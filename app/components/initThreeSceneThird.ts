@@ -1,7 +1,7 @@
 import * as THREE from "three";
 import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
 
-export const initThreeSceneTwo = (
+export const initThreeSceneThird = (
   sceneRef: React.MutableRefObject<HTMLDivElement | null>
 ) => {
   if (sceneRef.current) {

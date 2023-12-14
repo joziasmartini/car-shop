@@ -2,9 +2,10 @@ import {
   BanknotesIcon,
   InformationCircleIcon,
 } from "@heroicons/react/24/outline";
-import Image from "next/image";
 import { useEffect, useRef } from "react";
-import { initThreeSceneTwo } from "./ThreeSceneTwo";
+import { initThreeSceneFirst } from "./initThreeSceneFirst";
+import { initThreeSceneSecond } from "./initThreeSceneSecond";
+import { initThreeSceneThird } from "./initThreeSceneThird";
 
 export default function CarList() {
   const firstCarSceneRef = useRef<HTMLDivElement | null>(null);
@@ -12,9 +13,9 @@ export default function CarList() {
   const thirdCarSceneRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
-    initThreeSceneTwo(firstCarSceneRef);
-    initThreeSceneTwo(secondCarSceneRef);
-    initThreeSceneTwo(thirdCarSceneRef);
+    initThreeSceneFirst(firstCarSceneRef);
+    initThreeSceneSecond(secondCarSceneRef);
+    initThreeSceneThird(thirdCarSceneRef);
   }, []);
 
   const cars = [

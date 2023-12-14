@@ -20,7 +20,7 @@ export default function Banner() {
       <div className="flex flex-1 justify-end">
         <button
           type="button"
-          className="-m-3 p-3 focus-visible:outline-offset-[-4px]"
+          className="-m-3 p-3 focus-visible:outline-offset-[-4px] cursor-pointer"
         >
           <span className="sr-only">Dismiss</span>
           <XMarkIcon className="h-5 w-5 text-white" aria-hidden="true" />
