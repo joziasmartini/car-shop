@@ -1,6 +1,11 @@
-## Car Shop
+<div align="center">
 
-Car shop beautifully crafted with Three.js.
+  <h1>Car Shop</h1>
+  <p>Car shop beautifully crafted with Three.js.</p>
+  
+  ![car-shop-showoff](https://github.com/joziasmartini/car-shop/assets/31961274/b1b298dc-f948-4f35-9543-fea0315f8ad2)
+
+</div>
 
 ### Technologies
 
